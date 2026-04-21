@@ -3,6 +3,7 @@ import React, { useRef } from 'react';
 import Image from 'next/image';
 import { motion, useInView } from "motion/react";
 import { Icon } from "@iconify/react";
+import { getWhatsAppLink, getConsultationMessage } from '@/app/api/data';
 
 const ContactMe = () => {
   const ref = useRef(null);
@@ -53,7 +54,7 @@ const ContactMe = () => {
                 Hubungi kami dengan menekan tombol WA berikut untuk mendapatkan solusi dan layanan terbaik kami.
               </p>
               <a
-                href="https://wa.me/6281234567890"
+                href={getWhatsAppLink(getConsultationMessage())}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 mb-4 text-base font-bold text-white transition-all bg-green-500 rounded-xl hover:bg-green-600 hover:-translate-y-1 shadow-lg hover:shadow-xl"

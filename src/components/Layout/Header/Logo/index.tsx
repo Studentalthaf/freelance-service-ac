@@ -1,16 +1,17 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 
 const Logo: React.FC = () => {
   return (
-    <Link href="/" className="inline-block transition-transform hover:scale-105 duration-300">
+    <Link href="/" className="inline-flex items-center transition-all hover:scale-105 duration-300">
       <Image
         src="/images/logo/alfaro-teknisi.webp"
         alt="Alfaro Jaya Teknik Logo"
-        width={160}
-        height={50}
+        width={120}
+        height={40}
         quality={100}
-        className="w-28 md:w-32 lg:w-40 h-auto object-contain dark:drop-shadow-[0_0_8px_rgba(255,255,255,0.7)]"
+        className="w-20 md:w-22 h-auto object-contain"
       />
     </Link>
   );

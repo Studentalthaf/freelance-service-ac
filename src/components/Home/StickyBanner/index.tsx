@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from "motion/react";
 import { Icon } from "@iconify/react";
+import { getWhatsAppLink, getConsultationMessage } from '@/app/api/data';
 
 const StickyBanner = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -60,7 +61,7 @@ const StickyBanner = () => {
             </div>
 
             <a 
-              href="https://wa.me/6281234567890" 
+              href={getWhatsAppLink(getConsultationMessage())} 
               target="_blank" 
               rel="noreferrer"
               className="mt-4 flex w-full items-center justify-center gap-2 bg-[#25D366] text-white py-3 rounded-xl font-bold shadow-lg hover:shadow-xl transition-all hover:bg-green-600 active:scale-95"

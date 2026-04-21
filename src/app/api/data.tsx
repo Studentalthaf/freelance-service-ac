@@ -1,5 +1,44 @@
 import { text } from "stream/consumers";
 
+// WhatsApp Configuration
+export const WHATSAPP_NUMBER = "6281556442718";
+// 6287768027765
+export const getWhatsAppLink = (message?: string) => {
+  if (message) {
+    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  }
+  return `https://wa.me/${WHATSAPP_NUMBER}`;
+};
+
+// Template pesan untuk konsultasi di Sticky Banner, Contact Me, dll
+export const getConsultationMessage = () => {
+  return "Halo Admin, saya ingin konsultasi mengenai masalah AC saya. Apakah bisa dibantu?";
+};
+
+export const generateOrderMessage = (
+  serviceTitle: string,
+  category: string,
+  price: string,
+  qty: number,
+  totalPrice: string,
+  name: string,
+  address: string
+) => {
+  return `Halo Admin, saya ingin memesan layanan Service AC:
+    
+*Layanan:* ${serviceTitle}
+*Kategori:* ${category}
+*Harga Satuan:* ${price}
+*Jumlah (Qty):* ${qty}
+*Total Harga:* ${totalPrice}
+
+*Data Pemesan:*
+*Nama:* ${name}
+*Alamat Lengkap:* ${address}
+
+Mohon informasi lebih lanjut. Terima kasih!`;
+};
+
 //hero
 export const Heroimage = [
   {
@@ -383,6 +422,13 @@ export const servicesData = [
     title: "Overload / Otomatis Mesin",
     price: "Rp 275.000",
     category: "Other",
+    image: "/images/contact-us/cuci.webp",
+  },
+  {
+    id: 32,
+    title: "Overhoul AC",
+    price: "Rp 475.000",
+    category: "Service",
     image: "/images/contact-us/cuci.webp",
   },
 ];

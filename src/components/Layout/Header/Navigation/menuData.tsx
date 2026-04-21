@@ -1,16 +1,9 @@
 import { HeaderItem } from "../../../../types/menu";
 
 export const headerData: HeaderItem[] = [
-  { label: "Beranda", href: "/" },
-  { label: "Layanan", href: "/services" },
-  { label: "Harga", href: "/pricing" },
-  {
-    label: "Artikel",
-    href: "#",
-    submenu: [
-      { label: "Daftar Artikel", href: "/blog" },
-      { label: "Tips & Trik AC", href: "/blog" },
-    ],
-  },
-  { label: "Hubungi Kami", href: "/contact" },
+  { label: "Beranda", href: "#beranda" },
+  { label: "Layanan", href: "#layanan" },
+  { label: "Mengapa Kami", href: "#mengapa" },
+  { label: "Testimoni", href: "#testimoni" },
+  { label: "Hubungi Kami", href: "#hubungi" },
 ];

@@ -9,19 +9,48 @@ import WhyUs from "@/components/Home/WhyUs";
 import StickyBanner from "@/components/Home/StickyBanner";
 
 export const metadata: Metadata = {
-  title: "service-ac - Jasa Perbaikan AC Berkualitas di Surabaya",
+  title: "Alfaro Jaya Teknik - Jasa Perbaikan AC Berkualitas di Surabaya",
+  description: "Layanan jasa cuci, bongkar pasang, dan perbaikan AC profesional, terpercaya dengan teknisi ahli. Hubungi kami untuk solusi pendingin ruangan Anda.",
+  keywords: "Service AC Alfaro, Jasa Perbaikan AC Berkualitas di Surabaya, Cuci AC, Bongkar Pasang AC",
+  openGraph: {
+    title: "Alfaro Jaya Teknik - Jasa Perbaikan AC Berkualitas di Surabaya",
+    description: "Layanan jasa cuci, bongkar pasang, dan perbaikan AC profesional, terpercaya dengan teknisi ahli. Hubungi kami untuk solusi pendingin ruangan Anda.",
+    images: [
+      {
+        url: "/images/hero/google.webp",
+        width: 800,
+        height: 600,
+        alt: "Alfaro Jaya Teknik Service AC",
+      },
+    ],
+  },
 };
 
 export default function Home() {
   return (
     <main>
-      <Hero />
-      <ServicesBento />
-      <ContactMe />
-      <OurServices />
-      <WhyUs />
+      <section id="beranda">
+        <Hero />
+      </section>
 
-      <Testimonial />
+      <section id="layanan">
+        <ServicesBento />
+        <OurServices />
+      </section>
+
+      <section id="hubungi">
+        <ContactMe />
+      </section>
+
+      <section id="mengapa">
+        <WhyUs />
+      </section>
+
+      <section id="testimoni">
+        <Testimonial />
+      </section>
+
+
       <StickyBanner />
     </main>
   );

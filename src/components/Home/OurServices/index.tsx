@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { AnimatePresence, motion } from "motion/react";
 import { Icon } from "@iconify/react";
-import { servicesData, categories } from '@/app/api/data';
+import { servicesData, categories, getWhatsAppLink, generateOrderMessage } from '@/app/api/data';
 
 // Helper for parsing prices string like "Rp 300.000" into actual Number 300000
 const parsePrice = (priceStr: string) => {
@@ -83,25 +83,17 @@ const OurServices = () => {
     const basePrice = parsePrice(selectedService.price);
     const totalPrice = basePrice * qty;
     
-    // The target WhatsApp number
-    const waNumber = "6281234567890"; // Ganti dengan nomor WhatsApp Service AC Merek Anda sebenarnya!
+    const message = generateOrderMessage(
+      selectedService.title,
+      selectedService.category,
+      selectedService.price,
+      qty,
+      formatPrice(totalPrice),
+      formData.name,
+      formData.address
+    );
 
-    const message = `Halo Admin, saya ingin memesan layanan Service AC:
-    
-*Layanan:* ${selectedService.title}
-*Kategori:* ${selectedService.category}
-*Harga Satuan:* ${selectedService.price}
-*Jumlah (Qty):* ${qty}
-*Total Harga:* ${formatPrice(totalPrice)}
-
-*Data Pemesan:*
-*Nama:* ${formData.name}
-*Alamat Lengkap:* ${formData.address}
-
-Mohon informasi lebih lanjut. Terima kasih!`;
-
-    const encodedMessage = encodeURIComponent(message);
-    const waLink = `https://wa.me/${waNumber}?text=${encodedMessage}`;
+    const waLink = getWhatsAppLink(message);
 
     // Set cooldown Anti-Spam (misal 60 detik)
     setCooldown(60); 

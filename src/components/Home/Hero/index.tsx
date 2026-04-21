@@ -62,7 +62,7 @@ const Hero = () => {
                 href="#"
                 className="inline-flex items-center justify-center bg-white text-gray-900 font-medium py-3.5 px-8 rounded-full hover:-translate-y-1 hover:shadow-xl hover:bg-gray-100 transition-all duration-300"
               >
-                Let's Talk Alfaro Jaya Teknik
+                Mari Hubungi Kami
               </Link>
             </motion.div>
           </motion.div>

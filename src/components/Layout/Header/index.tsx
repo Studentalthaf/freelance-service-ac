@@ -55,14 +55,14 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 z-50 w-full bg-transparent transition-all ${
-        sticky ? "h-16 shadow-lg bg-white dark:bg-darkheader" : "h-20 shadow-none"
+      className={`fixed top-0 z-50 w-full h-[68px] transition-all duration-300 ${
+        sticky
+          ? "shadow-md bg-white/95 dark:bg-darkheader/95 backdrop-blur-md border-b border-gray-200/50 dark:border-white/10"
+          : "shadow-none bg-transparent"
       }`}
     >
-      <div className={`container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) flex justify-between lg:items-center xl:gap-16 lg:gap-8 px-4 transition-all duration-300 ${
-        sticky ? "py-2" : "py-4"
-      }`}>
-        <div className={`transition-all duration-300`}>
+      <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) h-full flex items-center justify-between xl:gap-16 lg:gap-8 px-8 md:px-12">
+        <div>
           <Logo />
         </div>
         <nav
@@ -107,32 +107,39 @@ const Header: React.FC = () => {
             className="block lg:hidden p-2 rounded-lg"
             aria-label="Toggle mobile menu"
           >
-            <span className="block w-6 h-0.5 bg-black dark:bg-white"></span>
-            <span className="block w-6 h-0.5 bg-black dark:bg-white mt-1.5"></span>
-            <span className="block w-6 h-0.5 bg-black dark:bg-white mt-1.5"></span>
+            <span className={`block w-6 h-0.5 mt-0 ${
+              !sticky && pathUrl === "/" ? "bg-white" : "bg-black dark:bg-white"
+            }`}></span>
+            <span className={`block w-6 h-0.5 mt-1.5 ${
+              !sticky && pathUrl === "/" ? "bg-white" : "bg-black dark:bg-white"
+            }`}></span>
+            <span className={`block w-6 h-0.5 mt-1.5 ${
+              !sticky && pathUrl === "/" ? "bg-white" : "bg-black dark:bg-white"
+            }`}></span>
           </button>
         </div>
       </div>
       <div
         ref={mobileMenuRef}
-        className={`lg:hidden fixed top-0 right-0  h-full w-full bg-white shadow-lg transform transition-transform duration-300 max-w-xs ${
+        className={`lg:hidden fixed top-0 right-0 h-full w-full bg-[#ffffff] dark:bg-[#0c1225] shadow-2xl border-l border-gray-200 dark:border-white/10 transform transition-transform duration-300 max-w-xs z-[999] ${
           navbarOpen ? "-translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex items-center justify-between p-4">
-          <h2 className="text-lg font-bold text-midnight_text dark:text-midnight_text">
+        <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-white/10">
+          <h2 className="text-sm font-semibold uppercase tracking-widest text-gray-500 dark:text-gray-400">
             Menu
           </h2>
           <button
             onClick={() => setNavbarOpen(false)}
             aria-label="Close mobile menu"
+            className="p-1.5 rounded-full hover:bg-gray-100 dark:hover:bg-white/10 transition-colors duration-200"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
               viewBox="0 0 24 24"
-              className="dark:text-midnight_text"
+              className="dark:text-white"
             >
               <path
                 fill="none"
@@ -145,9 +152,13 @@ const Header: React.FC = () => {
             </svg>
           </button>
         </div>
-        <nav className="flex flex-col items-start p-4">
+        <nav className="flex flex-col items-start px-4 pt-2 pb-6">
           {headerData.map((item, index) => (
-            <MobileHeaderLink key={index} item={item} />
+            <MobileHeaderLink
+              key={index}
+              item={item}
+              onClose={() => setNavbarOpen(false)}
+            />
           ))}
         </nav>
       </div>

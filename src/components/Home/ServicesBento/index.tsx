@@ -3,7 +3,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion, useInView } from "motion/react";
-import { ServicesBentoData } from '@/app/api/data';
+import { ServicesBentoData, getWhatsAppLink, getConsultationMessage } from '@/app/api/data';
 
 import { Icon } from "@iconify/react";
 
@@ -190,7 +190,7 @@ const ServicesBento = () => {
               </div>
 
               <a 
-                href="https://wa.me/6281234567890" 
+                href={getWhatsAppLink(getConsultationMessage())} 
                 target="_blank" 
                 rel="noreferrer"
                 className="group relative flex w-full items-center justify-center gap-2 bg-[#25D366] text-white py-4 rounded-xl font-semibold overflow-hidden transition-all hover:shadow-[0_8px_25px_rgba(37,211,102,0.3)] hover:-translate-y-1"
