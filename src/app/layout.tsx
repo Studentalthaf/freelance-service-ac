@@ -4,7 +4,13 @@ import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
 import { ThemeProvider } from "next-themes";
 import ScrollToTop from "@/components/ScrollToTop";
+import type { Metadata } from "next";
+
 const dmsans = DM_Sans({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+};
 
 export default function RootLayout({
   children,

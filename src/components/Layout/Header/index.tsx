@@ -57,7 +57,7 @@ const Header: React.FC = () => {
     <header
       className={`fixed top-0 z-50 w-full h-[68px] transition-all duration-300 ${
         sticky
-          ? "shadow-md bg-white/95 dark:bg-darkheader/95 backdrop-blur-md border-b border-gray-200/50 dark:border-white/10"
+          ? "shadow-md bg-white dark:bg-darkheader border-b border-gray-200/50 dark:border-white/10"
           : "shadow-none bg-transparent"
       }`}
     >
@@ -107,13 +107,13 @@ const Header: React.FC = () => {
             className="block lg:hidden p-2 rounded-lg"
             aria-label="Toggle mobile menu"
           >
-            <span className={`block w-6 h-0.5 mt-0 ${
+            <span className={`block w-6 h-0.5 mt-0 transition-colors ${
               !sticky && pathUrl === "/" ? "bg-white" : "bg-black dark:bg-white"
             }`}></span>
-            <span className={`block w-6 h-0.5 mt-1.5 ${
+            <span className={`block w-6 h-0.5 mt-1.5 transition-colors ${
               !sticky && pathUrl === "/" ? "bg-white" : "bg-black dark:bg-white"
             }`}></span>
-            <span className={`block w-6 h-0.5 mt-1.5 ${
+            <span className={`block w-6 h-0.5 mt-1.5 transition-colors ${
               !sticky && pathUrl === "/" ? "bg-white" : "bg-black dark:bg-white"
             }`}></span>
           </button>
@@ -121,7 +121,7 @@ const Header: React.FC = () => {
       </div>
       <div
         ref={mobileMenuRef}
-        className={`lg:hidden fixed top-0 right-0 h-full w-full bg-[#ffffff] dark:bg-[#0c1225] shadow-2xl border-l border-gray-200 dark:border-white/10 transform transition-transform duration-300 max-w-xs z-[999] ${
+        className={`lg:hidden fixed top-0 right-0 h-full w-full bg-white dark:bg-darkheader shadow-2xl border-l border-gray-200 dark:border-white/10 transform transition-transform duration-300 max-w-xs z-[999] ${
           navbarOpen ? "-translate-x-0" : "translate-x-full"
         }`}
       >

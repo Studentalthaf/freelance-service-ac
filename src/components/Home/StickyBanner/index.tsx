@@ -6,21 +6,41 @@ import { getWhatsAppLink, getConsultationMessage } from '@/app/api/data';
 
 const StickyBanner = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isDismissed, setIsDismissed] = useState(false);
+
+  useEffect(() => {
+    // Cek di sessionStorage apakah user sudah menutup banner sesi ini
+    if (typeof window !== "undefined") {
+      const dismissed = sessionStorage.getItem("waBannerDismissed") === "true";
+      setIsDismissed(dismissed);
+    }
+  }, []);
 
   // Munculkan banner setelah scroll sedikit agar tidak langsung menutup konten header
   useEffect(() => {
+    if (isDismissed) return;
+
     const handleScroll = () => {
       if (window.scrollY > 300) {
         setIsVisible(true);
+      } else {
+        setIsVisible(false);
       }
     };
     
     window.addEventListener("scroll", handleScroll);
+    // Jalankan sekali saat mount jika posisi awal sudah di bawah
+    handleScroll();
+
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isDismissed]);
 
   const handleClose = () => {
     setIsVisible(false);
+    setIsDismissed(true);
+    if (typeof window !== "undefined") {
+      sessionStorage.setItem("waBannerDismissed", "true");
+    }
   };
 
   return (
