@@ -55,7 +55,7 @@ const Hero = () => {
               Teknik
             </motion.h1>
             <motion.p variants={itemVariants} className="text-lg text-white/80 md:text-xl font-light mb-10 max-w-xl leading-relaxed">
-              Kami menyediakan layanan perbaikan AC berkualitas tinggi untuk memastikan kenyamanan Anda. Dengan tim teknisi berpengalaman, kami siap membantu dari perawatan rutin hingga perbaikan mendalam di Surabaya dan sekitarnya.
+              Kami menyediakan layanan perbaikan AC berkualitas tinggi untuk memastikan kenyamanan Anda. Dengan tim teknisi berpengalaman, kami siap membantu dari perawatan rutin.
             </motion.p>
             <motion.div variants={itemVariants}>
               <Link

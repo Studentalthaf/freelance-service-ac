@@ -223,7 +223,7 @@ export const servicesData = [
   },
   {
     id: 3,
-    title: "Service Cuci Inverter",
+    title: "Service Cuci Inverter 0,5 - 2 PK",
     price: "Rp 135.000",
     category: "Service",
     image: "/images/contact-us/cuci.webp",
@@ -356,14 +356,14 @@ export const servicesData = [
   },
   {
     id: 22,
-    title: "Perbaikan Kebocoran Pipa Bering/Nepel",
+    title: "Perbaikan Kebocoran Pipa Flaring/Nepel",
     price: "Rp 395.000",
     category: "Repair",
     image: "/images/contact-us/1212.webp",
   },
   {
     id: 23,
-    title: "Vakum AC",
+    title: "Vacum AC",
     price: "Rp 275.000",
     category: "Service",
     image: "/images/contact-us/cuci.webp",
@@ -377,7 +377,7 @@ export const servicesData = [
   },
   {
     id: 25,
-    title: "Vakum dan Flushing",
+    title: "Vacum dan Flushing",
     price: "Rp 475.000",
     category: "Service", 
     image: "/images/contact-us/cuci.webp",
