@@ -142,10 +142,10 @@ const OurServices = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: (index % 6) * 0.1 }}
-              className="group relative bg-white dark:bg-gray-800/50 rounded-[32px] overflow-hidden flex flex-col justify-between transition-all duration-300 hover:-translate-y-2 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_15px_40px_rgba(37,99,235,0.08)] dark:shadow-none dark:hover:shadow-[0_15px_40px_rgba(0,0,0,0.3)] border border-gray-100/80 dark:border-gray-700/50"
+              className="group relative h-full bg-white dark:bg-gray-800/50 rounded-[32px] overflow-hidden flex flex-col justify-between transition-all duration-300 hover:-translate-y-2 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_15px_40px_rgba(37,99,235,0.08)] dark:shadow-none dark:hover:shadow-[0_15px_40px_rgba(0,0,0,0.3)] border border-gray-100/80 dark:border-gray-700/50"
             >
               {/* Image Section */}
-              <div className="relative w-full h-[260px] p-4 pb-0">
+              <div className="relative w-full h-[260px] p-4 pb-0 shrink-0">
                 <div className="relative w-full h-full rounded-[24px] overflow-hidden bg-gray-200 dark:bg-gray-700">
                   <Image
                     src={service.image}
@@ -159,25 +159,32 @@ const OurServices = () => {
               </div>
 
               {/* Text & Action Section */}
-              <div className="relative bg-white dark:bg-gray-900 mt-6 p-6 md:p-8 rounded-t-[32px] shadow-[0_-4px_20px_rgba(0,0,0,0.02)] dark:shadow-none flex items-end justify-between">
+              <div className="relative flex-1 bg-white dark:bg-gray-900 mt-6 p-6 md:p-8 rounded-t-[32px] shadow-[0_-4px_20px_rgba(0,0,0,0.02)] dark:shadow-none flex flex-col justify-between">
                 
                 {/* Info */}
-                <div className="flex-1 pr-6">
+                <div className="mb-4">
                   <p className="text-gray-500 dark:text-gray-400 text-sm font-medium mb-2 uppercase tracking-wider">{service.category}</p>
-                  <h3 className="text-gray-900 dark:text-white text-lg md:text-xl font-bold mb-3 line-clamp-2 min-h-[56px] leading-snug">{service.title}</h3>
+                  <h3 className="text-gray-900 dark:text-white text-lg md:text-xl font-bold mb-2 line-clamp-2 leading-snug">{service.title}</h3>
+                  {service.description && (
+                    <p className="text-gray-500 dark:text-gray-400 text-xs md:text-sm line-clamp-2 mb-4 leading-relaxed">
+                      {service.description}
+                    </p>
+                  )}
                   <div className="font-extrabold text-blue-600 dark:text-blue-400 text-xl">
                     {service.price}
                   </div>
                 </div>
                 
-                {/* Action Button - Floating positioned on the joint */}
-                <button 
-                  onClick={() => openModal(service)}
-                  className="absolute -top-6 right-6 md:right-8 px-5 h-12 bg-black dark:bg-white text-white dark:text-black rounded-full flex items-center justify-center space-x-2 transition-all duration-300 transform group-hover:scale-105 shadow-xl group-hover:shadow-[0_10px_20px_rgba(0,0,0,0.15)] dark:group-hover:shadow-[0_10px_20px_rgba(255,255,255,0.15)] z-10"
-                >
-                  <span className="text-xs font-bold uppercase tracking-wider">Selengkapnya</span>
-                  <Icon icon="solar:arrow-right-up-linear" className="text-lg group-hover:rotate-45 transition-transform duration-300" />
-                </button>
+                {/* Action Button */}
+                <div className="pt-2">
+                  <button 
+                    onClick={() => openModal(service)}
+                    className="w-full h-12 bg-black dark:bg-white text-white dark:text-black rounded-full flex items-center justify-center space-x-2 transition-all duration-300 hover:bg-gray-800 dark:hover:bg-gray-200 shadow-lg"
+                  >
+                    <span className="text-xs font-bold uppercase tracking-wider">Selengkapnya</span>
+                    <Icon icon="solar:arrow-right-up-linear" className="text-lg group-hover:rotate-45 transition-transform duration-300" />
+                  </button>
+                </div>
               </div>
             </motion.div>
           ))}
@@ -245,6 +252,16 @@ const OurServices = () => {
 
               {/* Body */}
               <div className="p-6 md:p-8 pt-6 space-y-6">
+                
+                {/* Description */}
+                {selectedService.description && (
+                  <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-2xl border border-blue-100 dark:border-blue-800/30">
+                    <h4 className="text-sm font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider mb-1">Deskripsi Layanan</h4>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+                      {selectedService.description}
+                    </p>
+                  </div>
+                )}
                 
                 {/* Form Inputs */}
                 <div className="space-y-4">

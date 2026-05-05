@@ -106,7 +106,7 @@ const ServicesBento = () => {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.3 }}
                   className="flex-1 bg-white dark:bg-slate-800 rounded-3xl p-6 flex flex-col items-center justify-center text-center shadow-[0_10px_30px_rgba(0,0,0,0.06)] dark:border dark:border-gray-700"
-                  style={{ minHeight: '300px' }}
+                  style={{ height: '350px' }}
                 >
                   <div className="w-24 h-24 relative mb-6">
                     {/* Decorative outer glow circle */}
