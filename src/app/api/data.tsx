@@ -87,19 +87,19 @@ export const ServicesBentoData = [
   {
     id: 1,
     title: "Cuci & Perawatan AC",
-    description: "",
+    description: "Paket lengkap untuk membersihkan dan merawat AC agar tetap optimal.",
     image: "/images/layanan-teknis/pengecekan_ac.webp"
   },
   {
     id: 2,
     title: "Bongkar Pasang AC",
-    description: "",
+    description: "Jasa bongkar pasang AC dengan teknisi profesional.",
     image: "/images/layanan-teknis/bongkar_pasang_ac.webp",
   },
   {
     id: 3,
     title: "Perbaikan Kapasitor",
-    description: "",
+    description: "Perbaikan kapasitor AC yang bermasalah.",
     image: "/images/layanan-teknis/pergantian kapasitor.webp"
   },
   {
