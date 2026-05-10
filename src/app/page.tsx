@@ -7,6 +7,7 @@ import ContactMe from "@/components/Home/ContactMe";
 import OurServices from "@/components/Home/OurServices";
 import WhyUs from "@/components/Home/WhyUs";
 import StickyBanner from "@/components/Home/StickyBanner";
+import ServicePriceList from "@/components/Home/ServicePriceList";
 
 export const metadata: Metadata = {
   title: "Alfaro Jaya Teknik - Jasa Perbaikan AC Berkualitas di Surabaya",
@@ -41,6 +42,8 @@ export default function Home() {
       <section id="hubungi">
         <ContactMe />
       </section>
+
+      <ServicePriceList />
 
       <section id="mengapa">
         <WhyUs />
