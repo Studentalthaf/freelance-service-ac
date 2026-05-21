@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import sharp from 'sharp';
 
-const dir = 'C:/projek/nicktio-nextjs-pro-v1-1/package/public/images/hero';
+const dir = 'C:/projek/nicktio-nextjs-pro-v1-1/package/public/images/contact-us';
 
 fs.readdirSync(dir).forEach(file => {
   const ext = path.extname(file).toLowerCase();

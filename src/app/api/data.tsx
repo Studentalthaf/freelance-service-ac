@@ -106,7 +106,7 @@ export const ServicesBentoData = [
     id: 4,
     title: "Isi & Tambah Freon",
     description: "Pengecekan dan pengisian tekanan freon AC yang bermasalah secara akurat.",
-    image: "/images/layanan-teknis/tambah_freon_isi_freon11.webp"
+    image: "/images/layanan-teknis/Tambah freon dan isi freon.webp"
   },
   { 
     id: 5,
@@ -213,7 +213,7 @@ export const servicesData = [
     price: "Rp 75.000",
     description: "Hanya jasa cuci 0.5 - 1 PK + Filter Indoor & Outdoor AC",
     category: "Service",
-    image: "/images/contact-us/cuci.webp",
+    image: "/images/contact-us/service cuci 1,5-2pk.webp",
   },
   {
     id: 2,
@@ -221,7 +221,7 @@ export const servicesData = [
     price: "Rp 85.000",
     description: "Hanya jasa cuci 1.5 - 2 PK + Filter Indoor & Outdoor AC",
     category: "Service",
-    image: "/images/contact-us/cuci.webp",
+    image: "/images/contact-us/service cuci 1,5-2pk.webp",
   },
   {
     id: 3,
@@ -229,7 +229,7 @@ export const servicesData = [
     price: "Rp 135.000",
     description: "Hanya jasa cuci 0.5 - 1 PK + Filter Indoor & Outdoor AC",
     category: "Service",
-    image: "/images/contact-us/cuci.webp",
+    image: "/images/contact-us/service cuci 1,5-2pk.webp",
   },
   {
     id: 4,
@@ -237,7 +237,7 @@ export const servicesData = [
     price: "Rp 250.000",
     description: "Biaya sudah termasuk jasa & sparepart",
     category: "Maintenance",
-    image: "/images/contact-us/1212.webp",
+    image: "/images/contact-us/isi_dan_tambah_freon2.webp",
   },
   {
     id: 5,
@@ -245,7 +245,7 @@ export const servicesData = [
     price: "Rp 300.000",
     description: "Biaya sudah termasuk jasa & sparepart",
     category: "Maintenance",
-    image: "/images/contact-us/1212.webp",
+    image: "/images/contact-us/isi_dan_tambah_freon2.webp",
   },
   {
     id: 6,
@@ -253,7 +253,7 @@ export const servicesData = [
     price: "Rp 250.000",
     description: "Biaya sudah termasuk jasa & sparepart",
     category: "Maintenance",
-    image: "/images/contact-us/1212.webp",
+    image: "/images/contact-us/isi_dan_tambah_freon4.webp",
   },
   {
     id: 7,
@@ -261,7 +261,7 @@ export const servicesData = [
     price: "Rp 300.000",
     description: "Biaya sudah termasuk jasa & sparepart",
     category: "Maintenance",
-    image: "/images/contact-us/1212.webp",
+    image: "/images/contact-us/isi_dan_tambah_freon4.webp",
   },
   {
     id: 8,
@@ -341,7 +341,7 @@ export const servicesData = [
     price: "Rp 375.000",
     description: "Biaya termasuk jasa dan sparepart",
     category: "Repair",
-    image: "/images/contact-us/1212.webp",
+    image: "/images/contact-us/penggantian_kapasitor.webp",
   },
   {
     id: 18,
@@ -349,7 +349,7 @@ export const servicesData = [
     price: "Rp 425.000",
     description: "Biaya termasuk jasa dan sparepart",
     category: "Repair",
-    image: "/images/contact-us/1212.webp",
+    image: "/images/contact-us/penggantian_kapasitor.webp",
   },
   {
     id: 19,
@@ -357,7 +357,7 @@ export const servicesData = [
     price: "Rp 75.000",
     description: "Biaya pengecekkan dikenakan apabila tidak jadi perbaikan atau pengerjaan",
     category: "Service",
-    image: "/images/contact-us/cuci.webp",
+    image: "/images/contact-us/cuci_ac.webp",
   },
   {
     id: 20,
@@ -405,7 +405,7 @@ export const servicesData = [
     price: "Rp 475.000",
     description: "Biaya sudah termasuk jasa dan sparepart",
     category: "Service", 
-    image: "/images/contact-us/cuci.webp",
+    image: "/images/contact-us/vacum_flesing.webp",
   },
   {
     id: 26,
