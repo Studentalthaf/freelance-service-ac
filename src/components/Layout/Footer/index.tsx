@@ -22,8 +22,8 @@ const Footer = () => {
               </div>
               <div className="flex items-center text-foottext text-16">
                 <Icon icon="majesticons:phone-retro-line" className="w-6 h-6 mr-3 text-primary" />
-                <Link href="https://wa.me/6281556442718" target="_blank" className="hover:text-primary">
-                  +62 815-5644-2718
+                <Link href="https://wa.me/6287768027765" target="_blank" className="hover:text-primary">
+                  +62 877-6802-7765
                 </Link>
               </div>
             </div>
@@ -35,7 +35,7 @@ const Footer = () => {
               <Link href="#" className="text-muted hover:text-primary transition-colors">
                 <Icon icon="mdi:instagram" width="28" height="28" />
               </Link>
-              <Link href="https://wa.me/6281556442718" target="_blank" className="text-muted hover:text-primary transition-colors">
+              <Link href="https://wa.me/6287768027765" target="_blank" className="text-muted hover:text-primary transition-colors">
                 <Icon icon="mdi:whatsapp" width="28" height="28" />
               </Link>
             </div>

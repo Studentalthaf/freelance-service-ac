@@ -1,7 +1,7 @@
 import { text } from "stream/consumers";
 
 // WhatsApp Configuration
-export const WHATSAPP_NUMBER = "6281556442718";
+export const WHATSAPP_NUMBER = "6287768027765";
 // 6287768027765
 export const getWhatsAppLink = (message?: string) => {
   if (message) {
@@ -213,7 +213,7 @@ export const servicesData = [
     price: "Rp 75.000",
     description: "Hanya jasa cuci 0.5 - 1 PK + Filter Indoor & Outdoor AC",
     category: "Service",
-    image: "/images/contact-us/service cuci 1,5-2pk.webp",
+    image: "/images/contact-us/1212.webp",
   },
   {
     id: 2,
@@ -229,7 +229,7 @@ export const servicesData = [
     price: "Rp 135.000",
     description: "Hanya jasa cuci 0.5 - 1 PK + Filter Indoor & Outdoor AC",
     category: "Service",
-    image: "/images/contact-us/service cuci 1,5-2pk.webp",
+    image: "/images/contact-us/1212.webp",
   },
   {
     id: 4,
@@ -301,7 +301,7 @@ export const servicesData = [
     price: "Rp 250.000",
     description: "hanya untuk jasa bongkat.",
     category: "Installation",
-    image: "/images/contact-us/cuci.webp",
+    image: "/images/contact-us/bongkar ac.webp",
   },
   {
     id: 13,
@@ -389,7 +389,7 @@ export const servicesData = [
     price: "Rp 275.000",
     description: "Biaya sudah termasuk jasa dan Sparepart",
     category: "Service",
-    image: "/images/contact-us/cuci.webp",
+    image: "/images/contact-us/vacum flusing.webp",
   },
   {
     id: 24,
@@ -397,7 +397,7 @@ export const servicesData = [
     price: "Rp 275.000",
     description: "Biaya sudah termasuk jasa dan Sparepart",
     category: "Service",
-    image: "/images/contact-us/cuci.webp",
+    image: "/images/contact-us/vacum flusing.webp",
   },
   {
     id: 25,
