@@ -393,7 +393,7 @@ export const servicesData = [
   },
   {
     id: 24,
-    title: "Flushing AC",
+    title: "Flushing Evaporator",
     price: "Rp 275.000",
     description: "Biaya sudah termasuk jasa dan Sparepart",
     category: "Service",
