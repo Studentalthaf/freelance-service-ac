@@ -530,3 +530,37 @@ export const testimonialsRow2 = [
   },
 ];
 
+// Supported AC Brands
+export const SupportedBrandsData = [
+  {
+    id: 1,
+    name: "Daikin",
+    logo: "/images/brands/DAIKIN2.webp",
+  },
+  {
+    id: 2,
+    name: "Samsung",
+    logo: "/images/brands/SAMSUNG.webp",
+  },
+  {
+    id: 3,
+    name: "Sharp",
+    logo: "/images/brands/SHARP.webp",
+  },
+  {
+    id: 4,
+    name: "LG",
+    logo: "/images/brands/LG.webp",
+  },
+  {
+    id: 5,
+    name: "Panasonic",
+    logo: "/images/brands/PANASONIC.webp",
+  },
+  {
+    id: 6,
+    name: "Gree",
+    logo: "/images/brands/GREE.webp",
+  },
+];
+

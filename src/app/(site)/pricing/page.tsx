@@ -3,7 +3,9 @@ import HeroSub from "@/components/SharedComponents/HeroSub";
 import React from "react";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Pricing | Nicktio",
+  title: "Daftar Harga Service AC",
+  description:
+    "Daftar harga jasa service AC Alfaro Jaya Teknik Surabaya. Harga cuci AC, isi freon, bongkar pasang, perbaikan AC transparan dan kompetitif.",
 };
 
 const page = () => {

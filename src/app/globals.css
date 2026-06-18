@@ -169,3 +169,39 @@ html, body {
 .blog-details hr {
     @apply border-border dark:border-dark_border
 }
+
+/* Brand Marquee Carousel */
+.brand-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 25s linear infinite;
+}
+
+.brand-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.brand-marquee-set {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding-right: 4rem;
+}
+
+.brand-marquee-item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  height: 70px;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}

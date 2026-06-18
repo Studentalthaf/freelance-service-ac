@@ -5,7 +5,9 @@ import React from "react";
 import HeroSub from "@/components/SharedComponents/HeroSub";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Contact | Nicktio",
+  title: "Hubungi Kami",
+  description:
+    "Hubungi Alfaro Jaya Teknik untuk konsultasi dan pemesanan jasa service AC di Surabaya. Respon cepat, teknisi profesional, layanan 24 jam.",
 };
 
 const page = () => {

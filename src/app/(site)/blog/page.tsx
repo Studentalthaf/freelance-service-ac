@@ -3,7 +3,9 @@ import BlogList from "@/components/Blog/BlogList";
 import HeroSub from "@/components/SharedComponents/HeroSub";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Blog | service-ac",
+  title: "Blog & Tips AC",
+  description:
+    "Baca artikel tips perawatan AC, cara hemat listrik, dan panduan memilih AC yang tepat dari Alfaro Jaya Teknik Surabaya.",
 };
 
 const Page = () => {
