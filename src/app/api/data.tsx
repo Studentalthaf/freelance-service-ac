@@ -213,7 +213,7 @@ export const servicesData = [
     price: "Rp 75.000",
     description: "Hanya jasa cuci 0.5 - 1 PK + Filter Indoor & Outdoor AC",
     category: "Service",
-    image: "/images/contact-us/1212.webp",
+    image: "/images/contact-us/cuci22.webp",
   },
   {
     id: 2,
@@ -229,7 +229,7 @@ export const servicesData = [
     price: "Rp 135.000",
     description: "Hanya jasa cuci 0.5 - 1 PK + Filter Indoor & Outdoor AC",
     category: "Service",
-    image: "/images/contact-us/1212.webp",
+    image: "/images/contact-us/cuci22.webp",
   },
   {
     id: 4,
@@ -309,7 +309,7 @@ export const servicesData = [
     price: "Rp 425.000",
     description: "Hanya untuk jasa pasang, belum termasuk material",
     category: "Installation",
-    image: "/images/contact-us/cuci.webp",
+    image: "/images/contact-us/pasang.webp",
   },
   {
     id: 14,
@@ -317,7 +317,7 @@ export const servicesData = [
     price: "Rp 475.000",
     description: "Hanya untuk jasa pasang, belum termasuk material",
     category: "Installation",
-    image: "/images/contact-us/cuci.webp",
+    image: "/images/contact-us/pasang.webp",
   },
   {
     id: 15,
@@ -365,7 +365,7 @@ export const servicesData = [
     price: "Rp 50.000",
     description: "Biaya hanya jasa saja",
     category: "Other",
-    image: "/images/contact-us/cuci.webp",
+    image: "/images/contact-us/bobok.webp",
   },
   {
     id: 21,
@@ -373,7 +373,7 @@ export const servicesData = [
     price: "Rp 175.000",
     description: "Hanya biaya jasa saja",
     category: "Repair",
-    image: "/images/contact-us/cuci.webp",
+    image: "/images/contact-us/las pipa.webp",
   },
   {
     id: 22,
@@ -389,7 +389,7 @@ export const servicesData = [
     price: "Rp 275.000",
     description: "Biaya sudah termasuk jasa dan Sparepart",
     category: "Service",
-    image: "/images/contact-us/vacum flusing.webp",
+    image: "/images/contact-us/vakum2323.webp",
   },
   {
     id: 24,

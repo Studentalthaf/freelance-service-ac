@@ -6,7 +6,7 @@ const dir = 'C:/projek/nicktio-nextjs-pro-v1-1/package/public/images/contact-us'
 
 fs.readdirSync(dir).forEach(file => {
   const ext = path.extname(file).toLowerCase();
-  
+
   if (['.jpg', '.jpeg', '.png'].includes(ext)) {
     const inputPath = path.join(dir, file);
     const outputPath = path.join(dir, `${path.basename(file, ext)}.webp`);
