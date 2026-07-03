@@ -229,7 +229,7 @@ export const servicesData = [
     price: "Rp 135.000",
     description: "Hanya jasa cuci 0.5 - 1 PK + Filter Indoor & Outdoor AC",
     category: "Service",
-    image: "/images/contact-us/cuci22.webp",
+    image: "/images/contact-us/Service Cuci Inverter 0,5 - 2 PK.webp",
   },
   {
     id: 4,
@@ -237,7 +237,7 @@ export const servicesData = [
     price: "Rp 250.000",
     description: "Biaya sudah termasuk jasa & sparepart",
     category: "Maintenance",
-    image: "/images/contact-us/isi_dan_tambah_freon2.webp",
+    image: "/images/contact-us/Tambah Freon R22 1,5-2 PK.webp",
   },
   {
     id: 5,
@@ -253,7 +253,7 @@ export const servicesData = [
     price: "Rp 250.000",
     description: "Biaya sudah termasuk jasa & sparepart",
     category: "Maintenance",
-    image: "/images/contact-us/isi_dan_tambah_freon4.webp",
+    image: "/images/contact-us/tambah freon2.webp",
   },
   {
     id: 7,
@@ -269,7 +269,7 @@ export const servicesData = [
     price: "Rp 350.000",
     description: "Biaya sudah termasuk jasa & sparepart",
     category: "Maintenance",
-    image: "/images/contact-us/1212.webp",
+    image: "/images/contact-us/tambah freon.webp",
   },
   {
     id: 9,
@@ -285,7 +285,7 @@ export const servicesData = [
     price: "Rp 350.000",
     description: "Biaya sudah termasuk jasa & sparepart",
     category: "Maintenance",
-    image: "/images/contact-us/1212.webp",
+    image: "/images/contact-us/tambah freon2.webp",
   },
   {
     id: 11,
@@ -317,7 +317,7 @@ export const servicesData = [
     price: "Rp 475.000",
     description: "Hanya untuk jasa pasang, belum termasuk material",
     category: "Installation",
-    image: "/images/contact-us/pasang.webp",
+    image: "/images/contact-us/pasang2.webp",
   },
   {
     id: 15,
@@ -333,7 +333,7 @@ export const servicesData = [
     price: "Rp 650.000",
     description: "Hanya untuk jasa bongkar pasang, belum termasuk material",
     category: "Installation",
-    image: "/images/contact-us/cuci.webp",
+    image: "/images/contact-us/pasang22.webp",
   },
   {
     id: 17,
