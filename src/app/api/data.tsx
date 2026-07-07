@@ -413,7 +413,7 @@ export const servicesData = [
     price: "Rp 375.000",
     description: "Biaya sudah termasuk jasa dan sparepart",
     category: "Maintenance",
-    image: "/images/contact-us/cuci.webp",
+    image: "/images/contact-us/oli_kompresor.webp",
   },
   {
     id: 27,
@@ -421,7 +421,7 @@ export const servicesData = [
     price: "Rp 175.000",
     description: "Biaya sudah termasuk jasa dan sparepart",
     category: "Maintenance",
-    image: "/images/contact-us/cuci.webp",
+    image: "/images/contact-us/pentil_ac.webp",
   },
   {
     id: 28,
@@ -429,7 +429,7 @@ export const servicesData = [
     price: "Rp 525.000",
     description: "Biaya sudah termasuk jasa dan sparepart",
     category: "Maintenance",
-    image: "/images/contact-us/cuci.webp",
+    image: "/images/contact-us/cairang_extreme.webp",
   },
   {
     id: 29,
@@ -437,7 +437,7 @@ export const servicesData = [
     price: "Rp 25.000",
     description: "",
     category: "Other",
-    image: "/images/contact-us/cuci.webp",
+    image: "/images/contact-us/cuci22.webp",
   },
   {
     id: 30,
@@ -445,7 +445,7 @@ export const servicesData = [
     price: "Rp 175.000",
     description: "",
     category: "Other",
-    image: "/images/contact-us/cuci.webp",
+    image: "/images/contact-us/biaya_apart.webp",
   },
   {
     id: 31,
@@ -453,7 +453,7 @@ export const servicesData = [
     price: "Rp 275.000",
     description: "Sudah termasuk jasa dan sparepart",
     category: "Other",
-    image: "/images/contact-us/cuci.webp",
+    image: "/images/contact-us/overhoul_otomatis.webp",
   },
   {
     id: 32,
@@ -461,7 +461,7 @@ export const servicesData = [
     price: "Rp 475.000",
     description: "Sudah termasuk jasa dan sparepart",
     category: "Service",
-    image: "/images/contact-us/cuci.webp",
+    image: "/images/contact-us/overhoul.webp",
   },
 ];
 
